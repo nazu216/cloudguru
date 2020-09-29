@@ -1,4 +1,4 @@
 FROM centos
 MAINTAINER nazeefa
-RUN echo "hello world"
+RUN echo "Welcome to Kloudgurus"
 EXPOSE 80
