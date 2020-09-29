@@ -1,4 +1,4 @@
-FROM centos
+FROM nginx
 MAINTAINER nazeefa
-RUN echo "Welcome to Kloudgurus"
+COPY welcome.txt /usr/share/nginx/html
 EXPOSE 80
