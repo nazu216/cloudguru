@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kloudgurus
+  labels:
+    app: display
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: display
+  template:
+    metadata:
+      labels:
+        app: display
+    spec:
+      containers:
+      - name: display
+        image: nazz/cloudgurudisplay
+        ports:
+        - containerPort: 80
