@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: display
-        image: nazz/cloudgurudisplay
+        image: nazz/cloudguru
         ports:
         - containerPort: 80
